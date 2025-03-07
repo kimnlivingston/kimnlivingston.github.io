@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Email"
+    , "href": "mailto:"
+    , "content": "kimnlivingston@gmail.com"
+  }
+  , {
+    "name": "Phone"
+    , "href": "tel:"
+    , "content": "973-796-4668"
+  }
+  , {
+    "name": "LinkedIn"
+    , "content": "linkedin.com/in/kimnlivingston"
+  }
+  , {
+    "name": "Github"
+    , "content": "kimnlivingston.github.io"
+  }
+]
