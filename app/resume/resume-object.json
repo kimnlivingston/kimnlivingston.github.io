@@ -1,0 +1,99 @@
+{
+  "name": "Kim N Livingston",
+  "contacts": [
+    {
+      "name": "Email"
+      , "type": "link"
+      , "rel": "mailto:"
+      , "content": "kimnlivingston@gmail.com"
+    }
+    , {
+      "name": "Phone"
+      , "type": "link"
+      , "rel": "tel:"
+      , "content": "973-796-4668"
+    }
+    , {
+      "name": "LinkedIn"
+      , "type": "link"
+      , "content": "linkedin.com/in/kimnlivingston"
+    }
+    , {
+      "name": "Github"
+      , "type": "link"
+      , "content": "kimnlivingston.github.io"
+    }
+  ]
+  , "experience": [
+    {
+      "name": "Full-Stack Developer"
+      , "start_date": "June 2024"
+      , "organization": "US Department of Navy (NAVSUP BSC)"
+      , "location": "Mechanicsburg, PA"
+      , "summary": "Develop and maintain 3 large-scale US Navy web applications using HTML, CSS, JavaScript, jQuery, Oracle PL/SQL, and various JavaScript libraries (Bootstrap, DataTables, jQuery UI, etc.)."
+      , "responsibilities": [
+        "Led a major version release for an application with 2,000 users, delivering requirements one month ahead of schedule while iteratively soliciting client feedback, prioritizing requests, and delegating team tasks."
+        , "Architect and optimize relational database structures and queries for applications with 30+ tables and 10,000+ data points, enhancing performance and ensuring system scalability."
+        , "Leverage Agile development methodologies with weekly scrum meetings and daily Azure DevOps backlog management, ensuring timely progress on application features and bug investigations."
+        , "Maintain application compliance with evolving accessibility standards (Section 508 and WCAG 2.2)."
+        , "Collaborate with cross-functional teams, project managers, and clients to identify and troubleshoot issues, improve system functionality, and update technical documentation."
+      ]
+    }
+    , {
+      "name": "Front-End Developer"
+      , "start_date": "July 2019"
+      , "end_date": "May 2024"
+      , "organization": "Mercer County Library System"
+      , "location": "Lawrenceville, NJ"
+      , "summary": "Developed and maintained 250+ page website using HTML, CSS, JavaScript, jQuery, PHP, MySQL, WordPress, WordPress plugins and custom-made WordPress child themes."
+      , "responsibilities": [
+        "Executed a 2-year website overhaul by researching best practices, creating and presenting mock-ups, incorporating feedback, performing QA testing, launching, maintaining, and improving."
+        , "Implemented new “Curbside Pickup” feature during COVID-19, allowing users to request contact-free pick-up of materials during dedicated time slots, serving a daily average of 250 patrons."
+        , "Improved website performance by lazy-loading images, compressing files, minifying JavaScript/CSS, and increasing cache time."
+        , "Created a style guide in Adobe Illustrator to improve accessibility and strengthen brand identity, utilizing standardized logos, fonts, and WCAG 2.2-compliant color combinations (dark theme inclusive)."
+        , "Coordinated with 180 staff members across 12 departments and 9 locations to curate website content and troubleshoot, maintain, and upgrade the hardware and software of 1,500 local devices."
+        , "Prepared comprehensive documentation covering 140 processes to facilitate emergency maintenance by non-technical staff and safeguard against a potential loss of institutional knowledge."
+      ]
+    }
+  ]
+  , "education": [
+    {
+      "name": "Master of Information"
+      , "location": "Rutgers University, New Brunswick, NJ"
+      , "completed_date": "January 2021"
+      , "summary": "Advanced expertise in database design, problem solving with data, and information organization."
+    }
+    , {
+      "name": "Bachelor of Arts in Information Technology"
+      , "location": "Rutgers University, New Brunswick, NJ"
+      , "completed_date": "January 2019"
+      , "summary": "Developed a strong foundation in computer science, information management, and technical communication."
+    }
+  ]
+  , "skills": [
+    {
+      "name": "Web Development"
+      , "content": "HTML, CSS, JavaScript, jQuery, Bootstrap, DataTables, PHP, JSON (REST)"
+    }
+    , {
+      "name": "CMS & Hosting"
+      , "content": "cPanel, WordPress, Drupal, Wix, Squarespace, Joomla"
+    }
+    , {
+      "name": "Database Managment"
+      , "content": "Oracle (PL/SQL), MySQL, SQL Developer"
+    }
+    , {
+      "name": "Development & DevOps"
+      , "content": "VS Code, Azure DevOps"
+    }
+    , {
+      "name": "Design & UI/UX"
+      , "content": "Adobe Illustrator, Figma, Canva"
+    }
+    , {
+      "name": "Interpersonal"
+      , "content": "Customer Service, Communication, Collaboration, Teamwork, Problem-Solving, Adaptability, Continuous Learning, Time Management, Teaching/Instruction, Community Engagement"
+    }
+  ]
+}
