@@ -1,9 +1,9 @@
 import resumeJSON from "./resume.json";
 
 const Heading = props => {
-  if (props.order === 1) return (<h1 className="font-bold text-4xl text-center">{props.content}</h1>)
-  if (props.order === 2) return (<h2 className="font-bold text-2xl mt-4 border-b">{props.content}</h2>)
-  if (props.order === 3) return (<h3 className="font-bold">{props.content}</h3>)
+  if (props.order === 1) return (<h1 className={`font-bold text-4xl text-center${(props.className) ? ` ${props.className}` : ""}`}>{props.content}</h1>)
+  if (props.order === 2) return (<h2 className={`font-bold text-2xl mt-4 border-b${(props.className) ? ` ${props.className}` : ""}`}>{props.content}</h2>)
+  if (props.order === 3) return (<h3 className={`font-bold${(props.className) ? ` ${props.className}` : ""}`}>{props.content}</h3>)
 }
 
 const ResumeSectionItem = ({item}) => {
@@ -20,9 +20,9 @@ const ResumeSectionItem = ({item}) => {
 
   return (
     <div className="resume-section-item">
-      <div className="resume-section-item-header flex-sm gap-2 mt-2">
+      <div className="resume-section-item-header flex flex-col md:flex-row md:gap-2 mt-2">
         <Heading order={3} content={item.name} />
-        <p className="grow before:content-['|'] before:pe-2">{item.location}</p>
+        <p className="md:grow md:before:content-['|'] md:before:pe-2">{item.location}</p>
         <p>{date}</p>
       </div>
       <p>{item.summary}</p>
@@ -41,9 +41,16 @@ const ResumeSection = props => {
 
   if (isContact) {
     sectionObject.contacts.forEach((contact) => {
-      let href = (contact.rel) ? `${contact.rel}${contact.content}` : contact.content;
+      let href = (contact.prefix) ? `${contact.prefix}${contact.content}` : contact.content;
       resumeSectionContent.push(
-        <a className="[&:not(:first-child)]:before:content-['|'] [&:not(:first-child)]:before:pe-2 [&:not(:first-child)]:before:ps-2" href={href} title={contact.name} key={contact.name}>
+        <a 
+          className="md:[&:not(:first-child)]:before:content-['|'] md:[&:not(:first-child)]:before:pe-2 md:[&:not(:first-child)]:before:ps-2" 
+          href={href} 
+          title={contact.name} 
+          key={contact.name}
+          target="_blank"
+
+        >
           {contact.content}
         </a>
       )
@@ -52,8 +59,8 @@ const ResumeSection = props => {
   } else if (isSkills) {
     sectionObject.content.forEach((skill) => {
       resumeSectionContent.push(
-        <div className="flex-sm gap-2" key={skill.title}>
-          <dt className="flex-none font-bold xs:mt-2 sm:mt-0 after:content-[':']" key={`${skill.title}-title`}>{skill.title}</dt>
+        <div className="md:flex gap-2" key={skill.title}>
+          <dt className="flex-none font-bold xs:mt-2 md:mt-0 md:after:content-[':']" key={`${skill.title}-title`}>{skill.title}</dt>
           <dd className="grow" key={`${skill.description}-description`}>{skill.description}</dd>
         </div>
       )
@@ -72,7 +79,9 @@ const ResumeSection = props => {
   return (
     <div className={`resume-section resume-${sectionName} ${(isContact) ? "text-center" : ""}`}>
       {(!isContact) ? (<Heading order={2} content={sectionTitle} />) : ""}
-      {(isSkills) ? (<dl className="sm:mt-2">{resumeSectionContent}</dl>) : resumeSectionContent}
+      {(isSkills) ? (<dl className="md:mt-2">{resumeSectionContent}</dl>) 
+        : (isContact) ? (<div className="flex flex-col md:flex-row justify-center">{resumeSectionContent}</div>) 
+        : resumeSectionContent}
     </div>
   )
 }
@@ -90,7 +99,7 @@ const Resume = ({resumeJSON}) => {
   })
 
   return (
-    <div className="resume font-serif max-w-4xl">
+    <div className="resume max-w-4xl">
       <Heading order={1} content="Kim N Livingston" />
       {resumeSections}
     </div>

@@ -5,25 +5,23 @@
     , "contacts": [
       {
         "name": "Email"
-        , "type": "link"
-        , "rel": "mailto:"
+        , "prefix": "mailto:"
         , "content": "kimnlivingston@gmail.com"
       }
       , {
         "name": "Phone"
-        , "type": "link"
-        , "rel": "tel:"
+        , "prefix": "tel:"
         , "content": "973-796-4668"
       }
       , {
         "name": "LinkedIn"
-        , "type": "link"
+        , "prefix": "https://www."
         , "content": "linkedin.com/in/kimnlivingston"
       }
       , {
         "name": "Github"
-        , "type": "link"
-        , "content": "kimnlivingston.github.io"
+        , "prefix": "https://"
+        , "content": "github.com/kimnlivingston"
       }
     ]
   }

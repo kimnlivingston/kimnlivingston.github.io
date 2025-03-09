@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Next.js"
+    , "href": "https://nextjs.org/docs"
+    , "icon": "next"
+  }
+  , {
+    "name": "React.js"
+    , "prefix": "https://react.dev/reference/react"
+    , "icon": "react"
+  }
+  , {
+    "name": "Tailwind CSS"
+    , "prefix": "https://tailwindcss.com/docs/installation/using-vite"
+    , "icon": "tailwind"
+  }
+]
